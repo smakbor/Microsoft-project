@@ -1,0 +1,417 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: gray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+  font-size: 15px;
+  color: #000;
+}
+a {
+  text-decoration: none;
+  color: #262626;
+}
+p {
+  font-size: 17px;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  background: rgb(16, 20, 20);
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+i {
+  font-size: 2rem;
+  color: rgb(64, 32, 178);
+}
+
+/*navbar*/
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 13px;
+}
+.main-nav h1{
+  font-size: 1.8rem;
+ 
+}
+.main-nav ul {
+  display: flex;
+}
+.main-nav ul li {
+  padding: 0 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid red;
+  color: blue;
+}
+
+/*showcase*/
+
+.showcase {
+  background: url("pic5.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.showcase h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  padding-bottom: 15px;
+}
+.showcase p {
+  color: blue;
+  font-size: 1.7rem;
+}
+
+/*HOME CARDS*/
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+
+.home-cards h1 {
+  color: rgb(12, 19, 15);
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.home-cards p {
+  color: black;
+}
+.home-cards img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 10% 60%;
+}
+
+.xbox {
+  background: url("xbox.jpg") no-repeat center center/cover;
+  height: 400px;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.content h2 {
+  color: mintcream;
+  font-size: 1.8rem;
+  padding: 10px;
+}
+.content p {
+  color: mintcream;
+  padding-bottom: 10px;
+}
+.content .btn {
+  background: lightgrey;
+  padding: 10px;
+}
+
+/*CARBON*/
+
+.carbon {
+  background: url("carbon.jpg") no-repeat center center/cover;
+  height: 400px;
+  width: 100%;
+}
+.carbon-box {
+  width: 50%;
+  padding: 100px 0 0 50px;
+  margin: 15px 0;
+}
+.carbon-box h2 {
+  font-size: 1.9rem;
+  color: #fff;
+  padding: 10px;
+}
+.carbon-box p {
+  font-size: 1.3rem;
+  color: linen;
+  padding-bottom: 10px;
+}
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.follow h2 {
+  font-size: 1.8rem;
+}
+.follow i {
+  margin: 10px;
+}
+
+/*links*/
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  column-gap: 8px;
+  background: lightgray;
+  color: #000;
+  padding: 10px;
+
+  font-size: 1.3rem;
+}
+.main-footer{
+  background: cyan;
+ 
+   text-align: center;
+  display:flex;
+  align-items: center;
+  padding:10px;
+}
+.main-footer ul{
+  display:flex;
+  justify-content: space-around;
+  align-items: right;
+  font-size: 1.3rem;
+}
+ 
+
+/*MEDIA QUIARIES*/
+
+@media(max-width:991px){
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+     
+    font-size: 10px;
+  }
+  .main-nav h1{
+    font-size: 1.6rem;
+   
+  }
+  .main-nav ul {
+    display: flex;
+  }
+  .main-nav ul li {
+    padding: 0 5px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 15px;
+  }
+  
+  .main-nav ul li a:hover {
+    border-bottom: 2px solid red;
+    color: blue;
+  }
+  i {
+    font-size: 1.5rem;
+    color: lightseagreen;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 8px;
+    row-gap:8px;
+    background: lightgray;
+    color: #fff;
+    padding: 10px;
+  
+    font-size: 1.3rem;
+  }
+  .carbon-box h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 7px;
+  }
+  
+
+}
+
+/*MEDIA QUIARIES 2*/
+
+@media(max-width:767px){
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 35px;
+     
+    font-size: 8px;
+  }
+  .main-nav h1{
+    font-size: 1.3rem;
+   
+  }
+  .main-nav ul {
+    display: flex;
+  }
+  .main-nav ul li {
+    padding: 0 5px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 13px;
+  }
+  
+  .main-nav ul li a:hover {
+    border-bottom: 2px solid red;
+    color: blue;
+  }
+  i {
+    font-size: 1.3rem;
+    color: lightseagreen;
+  }
+  .home-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap:8px;
+  }
+  .carbon-box p {
+  display:none;
+  }
+  .carbon-box {
+    width: 100%;
+    padding: 100px 0 0 50px;
+    margin: 15px 0;
+  }
+  
+
+}
+ 
+
+/*MEDIA QUIARIES 3*/
+
+@media(max-width:680px){
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 28px;
+     
+    font-size: 7px;
+  }
+  .main-nav h1{
+    font-size: 1.2rem;
+   
+  }
+  .main-nav ul {
+    display: flex;
+  }
+  .main-nav ul li {
+    padding: 0 5px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .main-nav ul li a:hover {
+    border-bottom: 2px solid red;
+    color: blue;
+  }
+   
+
+
+}
+
+/*MEDIA QUIARIES 4*/
+
+
+
+@media(max-width:620px){
+  .main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 24px;
+   
+  font-size: 6px;
+}
+.main-nav h1{
+  font-size: 1.1rem;
+ 
+}
+.main-nav ul {
+  display: flex;
+}
+.main-nav ul li {
+  padding: 0 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid red;
+  color: blue;
+}
+ .main-nav .right-menu i{
+   display:none;
+ }
+ .home-cards {
+  display: grid;
+  grid-template-columns:1fr;
+  column-gap: 10px;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 8px;
+  background: lightgray;
+  color: #fff;
+  padding: 10px;
+
+  font-size: 1.3rem;
+}
+.main-footer ul{
+  display:none;
+}
+}
+
+ 
+  
+
+ 
